@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion 21
@@ -16,4 +18,88 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+group = 'me.zhangls'
+version = '1.0'
+
+
+
+def libraryName = 'android-wifi-connecter'
+def libraryDesc = 'Open source library for android Wi-Fi connection.'
+def siteUrl = 'https://github.com/ihrthk/android-wifi-connecter'
+
+bintray {
+    user = ''
+    key = ''
+
+    configurations = ['archives'] //When uploading configuration files
+    pkg {
+        repo = 'android-library'
+        name = libraryName
+        desc = libraryDesc
+        websiteUrl = siteUrl
+        issueTrackerUrl = siteUrl
+        vcsUrl = siteUrl
+        licenses = ['Apache-2.0']
+        labels = ['aar', 'android', 'baseadapter','helper']
+        publicDownloadNumbers = true
+    }
+}
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                name libraryName
+                url siteUrl
+                licenses {
+                    license {
+                        name 'MIT License'
+                        url 'http://opensource.org/licenses/mit-license.php'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'ihrthk'
+                        name 'zhangls'
+                        email 'ihrthk@gmail.com'
+                    }
+                }
+                scm {
+                    connection siteUrl
+                    developerConnection siteUrl
+                    url siteUrl
+
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
+task findConventions << {
+    println project.getConvention()
 }
