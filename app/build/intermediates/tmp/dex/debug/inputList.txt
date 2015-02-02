@@ -1,0 +1,1 @@
+D:\studio_workspace\android-wifi-connecter\app\build\intermediates\classes\debug
