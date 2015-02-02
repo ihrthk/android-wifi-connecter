@@ -19,14 +19,13 @@ android {
         }
     }
 }
-group = 'me.zhangls'
-version = '1.0'
-
-
 
 def libraryName = 'android-wifi-connecter'
 def libraryDesc = 'Open source library for android Wi-Fi connection.'
 def siteUrl = 'https://github.com/ihrthk/android-wifi-connecter'
+
+group = 'me.zhangls'
+version = '1.0'
 
 bintray {
     user = ''
@@ -41,7 +40,7 @@ bintray {
         issueTrackerUrl = siteUrl
         vcsUrl = siteUrl
         licenses = ['Apache-2.0']
-        labels = ['aar', 'android', 'baseadapter','helper']
+        labels = ['aar', 'android', 'wifi','connecter']
         publicDownloadNumbers = true
     }
 }

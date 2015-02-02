@@ -11,75 +11,75 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int buttons_view_bk=0x7f040000;
-        public static final int content_bk=0x7f040001;
-        public static final int title_text=0x7f040002;
+        public static int buttons_view_bk=0x7f040000;
+        public static int content_bk=0x7f040001;
+        public static int title_text=0x7f040002;
     }
     public static final class drawable {
-        public static final int ic_dialog_menu_generic=0x7f020000;
-        public static final int icon=0x7f020001;
+        public static int ic_dialog_menu_generic=0x7f020000;
+        public static int icon=0x7f020001;
     }
     public static final class id {
-        public static final int IPAddress=0x7f070006;
-        public static final int IPAddress_TextView=0x7f070007;
-        public static final int LinkSpeed_TextView=0x7f070003;
-        public static final int Password=0x7f070008;
-        public static final int Password_EditText=0x7f07000a;
-        public static final int Password_TextView=0x7f070009;
-        public static final int Security_TextView=0x7f070005;
-        public static final int ShowPassword_CheckBox=0x7f07000b;
-        public static final int SignalStrength_TextView=0x7f070004;
-        public static final int Speed=0x7f070002;
-        public static final int Status=0x7f070000;
-        public static final int Status_TextView=0x7f070001;
-        public static final int button1=0x7f07000e;
-        public static final int button2=0x7f07000f;
-        public static final int button3=0x7f070010;
-        public static final int buttons_view=0x7f07000d;
-        public static final int content=0x7f07000c;
-        public static final int title=0x7f070011;
+        public static int IPAddress=0x7f070006;
+        public static int IPAddress_TextView=0x7f070007;
+        public static int LinkSpeed_TextView=0x7f070003;
+        public static int Password=0x7f070008;
+        public static int Password_EditText=0x7f07000a;
+        public static int Password_TextView=0x7f070009;
+        public static int Security_TextView=0x7f070005;
+        public static int ShowPassword_CheckBox=0x7f07000b;
+        public static int SignalStrength_TextView=0x7f070004;
+        public static int Speed=0x7f070002;
+        public static int Status=0x7f070000;
+        public static int Status_TextView=0x7f070001;
+        public static int button1=0x7f07000e;
+        public static int button2=0x7f07000f;
+        public static int button3=0x7f070010;
+        public static int buttons_view=0x7f07000d;
+        public static int content=0x7f07000c;
+        public static int title=0x7f070011;
     }
     public static final class layout {
-        public static final int base_content=0x7f030000;
-        public static final int buttons_view_divider=0x7f030001;
-        public static final int floating=0x7f030002;
-        public static final int title_view=0x7f030003;
+        public static int base_content=0x7f030000;
+        public static int buttons_view_divider=0x7f030001;
+        public static int floating=0x7f030002;
+        public static int title_view=0x7f030003;
     }
     public static final class string {
-        public static final int adhoc_not_supported_yet=0x7f050000;
-        public static final int app_name=0x7f050001;
-        public static final int buttonOp=0x7f050002;
-        public static final int button_change_password=0x7f050003;
-        public static final int connect=0x7f050004;
-        public static final int dummy_content_description=0x7f050005;
-        public static final int forget_network=0x7f050006;
-        public static final int ip_address=0x7f050007;
-        public static final int please_type_passphrase=0x7f050008;
-        public static final int security=0x7f050009;
-        public static final int signal=0x7f05000a;
-        public static final int status_connected=0x7f05000b;
-        public static final int status_connecting=0x7f05000c;
-        public static final int toastFailed=0x7f05000d;
-        public static final int wifi_change_password=0x7f05000e;
-        public static final int wifi_connect_to=0x7f05000f;
-        public static final int wifi_link_speed=0x7f050010;
-        public static final int wifi_password_unchanged=0x7f050011;
-        public static final int wifi_save_config=0x7f050012;
-        public static final int wifi_security_ieee8021x=0x7f050013;
-        public static final int wifi_security_open=0x7f050014;
-        public static final int wifi_security_wep=0x7f050015;
-        public static final int wifi_security_wpa=0x7f050016;
-        public static final int wifi_security_wpa2=0x7f050017;
-        public static final int wifi_security_wpa_eap=0x7f050018;
-        public static final int wifi_show_password=0x7f050019;
-        public static final int wifi_signal_0=0x7f05001a;
-        public static final int wifi_signal_1=0x7f05001b;
-        public static final int wifi_signal_2=0x7f05001c;
-        public static final int wifi_signal_3=0x7f05001d;
-        public static final int wifi_status=0x7f05001e;
+        public static int adhoc_not_supported_yet=0x7f050000;
+        public static int app_name=0x7f050001;
+        public static int buttonOp=0x7f050002;
+        public static int button_change_password=0x7f050003;
+        public static int connect=0x7f050004;
+        public static int dummy_content_description=0x7f050005;
+        public static int forget_network=0x7f050006;
+        public static int ip_address=0x7f050007;
+        public static int please_type_passphrase=0x7f050008;
+        public static int security=0x7f050009;
+        public static int signal=0x7f05000a;
+        public static int status_connected=0x7f05000b;
+        public static int status_connecting=0x7f05000c;
+        public static int toastFailed=0x7f05000d;
+        public static int wifi_change_password=0x7f05000e;
+        public static int wifi_connect_to=0x7f05000f;
+        public static int wifi_link_speed=0x7f050010;
+        public static int wifi_password_unchanged=0x7f050011;
+        public static int wifi_save_config=0x7f050012;
+        public static int wifi_security_ieee8021x=0x7f050013;
+        public static int wifi_security_open=0x7f050014;
+        public static int wifi_security_wep=0x7f050015;
+        public static int wifi_security_wpa=0x7f050016;
+        public static int wifi_security_wpa2=0x7f050017;
+        public static int wifi_security_wpa_eap=0x7f050018;
+        public static int wifi_show_password=0x7f050019;
+        public static int wifi_signal_0=0x7f05001a;
+        public static int wifi_signal_1=0x7f05001b;
+        public static int wifi_signal_2=0x7f05001c;
+        public static int wifi_signal_3=0x7f05001d;
+        public static int wifi_status=0x7f05001e;
     }
     public static final class style {
-        public static final int PlatformDialog=0x7f060000;
-        public static final int textAppearanceBaseContent=0x7f060001;
+        public static int PlatformDialog=0x7f060000;
+        public static int textAppearanceBaseContent=0x7f060001;
     }
 }
